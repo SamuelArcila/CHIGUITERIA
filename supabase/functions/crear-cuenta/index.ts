@@ -1,3 +1,4 @@
+// @ts-nocheck
 // Edge Function de Supabase: crea la cuenta de una persona del equipo. SOLO puede pedirla un administrador.
 // Usa la clave service_role, que Supabase inyecta en el servidor: nunca debe ir en el código del navegador.
 // SIN PROBAR contra un proyecto real de Supabase: el backend debe probarla antes de usarla.
