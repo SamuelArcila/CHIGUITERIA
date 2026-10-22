@@ -1,0 +1,8 @@
+.equipo__cabecera { display: flex; align-items: center; justify-content: space-between; gap: var(--espacio-4); flex-wrap: wrap; }
+.equipo h1 { font-size: var(--texto-2xl); }
+.equipo__lista { list-style: none; margin: var(--espacio-6) 0 0; padding: 0; display: flex; flex-direction: column; gap: var(--espacio-3); max-width: 720px; }
+.cuenta { display: flex; align-items: center; gap: var(--espacio-4); padding: var(--espacio-4) var(--espacio-6); background: var(--color-superficie); border: 1.5px solid var(--color-borde); border-radius: var(--radio-lg); }
+.cuenta__avatar { width: 44px; height: 44px; display: grid; place-items: center; border-radius: 50%; background: var(--color-fondo); font-weight: 700; flex-shrink: 0; }
+.cuenta__datos { flex: 1; display: flex; flex-direction: column; min-width: 0; }
+.cuenta__datos span { color: var(--color-tinta-suave); font-size: var(--texto-sm); overflow-wrap: anywhere; }
+.equipo__aviso { margin: var(--espacio-4) 0 0; color: var(--color-tinta-suave); }

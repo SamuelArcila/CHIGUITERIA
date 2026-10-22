@@ -1,0 +1,22 @@
+.detalle {
+  width: min(520px, 92vw);
+  padding: var(--espacio-8);
+  border: none;
+  border-radius: var(--radio-lg);
+  background: var(--color-superficie);
+  color: inherit;
+  font: inherit;
+}
+.detalle::backdrop { background: rgba(29, 43, 36, 0.5); }
+.detalle h2 { font-size: var(--texto-xl); }
+.detalle__precio { margin: var(--espacio-1) 0 0; font-weight: 600; }
+.detalle fieldset { border: 0; padding: 0; margin: var(--espacio-6) 0 0; }
+.detalle legend { padding: 0; margin-bottom: var(--espacio-3); font-weight: 600; }
+.detalle__fila { display: flex; align-items: center; gap: var(--espacio-3); flex-wrap: wrap; }
+.detalle__opcion { display: flex; align-items: center; gap: var(--espacio-3); min-height: var(--toque-min); }
+.detalle__opcion input { width: 24px; height: 24px; accent-color: var(--color-primario); }
+.detalle__opcion span:first-of-type { flex: 1; }
+.detalle__cantidad { margin-top: var(--espacio-6); }
+.detalle__cantidad span { flex: 1; font-weight: 600; }
+.detalle__cantidad .btn { padding: 0; min-width: var(--toque-min); }
+.detalle__acciones { margin-top: var(--espacio-8); justify-content: flex-end; }

@@ -1,0 +1,4 @@
+.pedidos h1 { font-size: var(--texto-2xl); }
+.pedidos h2 { margin: var(--espacio-8) 0 var(--espacio-4); font-size: var(--texto-xl); }
+.pedidos__grilla { margin-top: var(--espacio-4); display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: var(--espacio-4); align-items: start; }
+.pedidos__aviso { margin: var(--espacio-4) 0 0; color: var(--color-tinta-suave); }

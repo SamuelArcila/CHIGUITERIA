@@ -1,0 +1,7 @@
+.card {
+  background: var(--color-superficie);
+  border: 1.5px solid var(--color-borde);
+  border-radius: var(--radio-lg);
+  padding: var(--espacio-6);
+}
+.card--apagada { background: transparent; border-style: dashed; color: var(--color-tinta-suave); }

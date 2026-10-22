@@ -1,0 +1,10 @@
+.pedido__cabecera { display: flex; align-items: center; justify-content: space-between; gap: var(--espacio-3); }
+.pedido__cabecera h3 { font-size: var(--texto-lg); }
+.pedido__hora { margin: var(--espacio-1) 0 var(--espacio-4); font-size: var(--texto-sm); color: var(--color-tinta-suave); }
+.pedido__items { list-style: none; margin: 0 0 var(--espacio-6); padding: 0; display: flex; flex-direction: column; gap: var(--espacio-2); }
+.pedido__items li { display: flex; flex-direction: column; }
+.pedido__items span { font-size: var(--texto-sm); color: var(--color-tinta-suave); }
+.pedido__confirmar p { margin: 0 0 var(--espacio-3); font-weight: 600; }
+.pedido__acciones { display: flex; gap: var(--espacio-3); }
+.pedido__acciones .btn { flex: 1; padding: 0 var(--espacio-3); }
+.pedido__error { margin: var(--espacio-3) 0 0; color: var(--color-error-texto); font-weight: 600; }

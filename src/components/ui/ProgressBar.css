@@ -1,0 +1,4 @@
+.barra { height: 12px; background: var(--color-borde); border-radius: 999px; overflow: hidden; }
+.barra__relleno { height: 100%; border-radius: 999px; }
+.barra__relleno--normal { background: var(--color-rio); }
+.barra__relleno--alerta { background: var(--color-error-texto); }

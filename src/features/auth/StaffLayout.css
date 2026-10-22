@@ -1,0 +1,56 @@
+.staff {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: 'barra' 'contenido' 'pestanas';
+}
+.staff__barra {
+  grid-area: barra;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--espacio-4);
+  padding: var(--espacio-3) var(--espacio-4);
+  background: var(--color-superficie);
+  border-bottom: 1.5px solid var(--color-borde);
+}
+.staff__persona { display: flex; align-items: center; gap: var(--espacio-3); }
+.staff__persona div { display: flex; flex-direction: column; line-height: 1.2; }
+.staff__persona div span { font-size: var(--texto-sm); color: var(--color-tinta-suave); }
+.staff__avatar {
+  width: 44px; height: 44px;
+  display: grid; place-items: center;
+  border-radius: 50%;
+  background: var(--color-primario);
+  color: var(--color-sobre-primario);
+  font-weight: 700;
+}
+.staff__contenido { grid-area: contenido; padding: var(--espacio-6) var(--espacio-4); }
+.staff__pestanas {
+  grid-area: pestanas;
+  display: flex;
+  background: var(--color-superficie);
+  border-top: 1.5px solid var(--color-borde);
+}
+.staff__pestanas a {
+  flex: 1;
+  min-height: var(--toque-min);
+  display: grid;
+  place-items: center;
+  color: var(--color-tinta-suave);
+  text-decoration: none;
+  font-weight: 600;
+}
+.staff__pestanas a[aria-current='page'] { color: var(--color-primario); box-shadow: inset 0 3px 0 var(--color-primario); }
+
+@media (min-width: 700px) {
+  .staff {
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 'barra barra' 'pestanas contenido';
+  }
+  .staff__pestanas { flex-direction: column; gap: var(--espacio-2); padding: var(--espacio-4); border-top: 0; border-right: 1.5px solid var(--color-borde); }
+  .staff__pestanas a { flex: none; padding: 0 var(--espacio-4); place-items: center start; border-radius: var(--radio-md); }
+  .staff__pestanas a[aria-current='page'] { background: var(--color-fondo); box-shadow: none; }
+  .staff__contenido { padding: var(--espacio-8); }
+}

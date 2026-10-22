@@ -1,0 +1,21 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--color-fondo);
+  color: var(--color-tinta);
+  font-family: var(--fuente);
+  font-size: var(--texto-base);
+  line-height: 1.45;
+}
+
+h1, h2, h3 { margin: 0; line-height: 1.15; font-weight: 700; }
+
+:focus-visible {
+  outline: 3px solid var(--color-rio);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}

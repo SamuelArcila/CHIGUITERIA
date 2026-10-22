@@ -1,0 +1,7 @@
+.inventario h1 { font-size: var(--texto-2xl); }
+.inventario__lista { list-style: none; margin: var(--espacio-6) 0 0; padding: 0; display: flex; flex-direction: column; gap: var(--espacio-4); max-width: 720px; }
+.stock { display: flex; align-items: center; gap: var(--espacio-4); padding: var(--espacio-4) var(--espacio-6); background: var(--color-superficie); border: 1.5px solid var(--color-borde); border-radius: var(--radio-lg); }
+.stock__texto { flex: 1; display: flex; flex-direction: column; gap: var(--espacio-2); }
+.stock__titulo { display: flex; align-items: center; gap: var(--espacio-3); flex-wrap: wrap; font-size: var(--texto-lg); }
+.stock__cifras { color: var(--color-tinta-suave); }
+.inventario__aviso { margin: var(--espacio-4) 0 0; color: var(--color-tinta-suave); }

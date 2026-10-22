@@ -1,0 +1,48 @@
+/* Tokens de diseño: los únicos lugares donde se definen colores, tamaños y radios.
+   Todo lo demás los usa con var(--nombre). Cambiar uno aquí lo cambia en toda la app. */
+:root {
+  /* Color */
+  --color-fondo: #EEF1EC;
+  --color-superficie: #FFFFFF;
+  --color-tinta: #1D2B24;
+  --color-tinta-suave: #4B5B52;
+  --color-borde: #D5DCD3;
+  --color-primario: #7A4B2A;
+  --color-primario-hover: #653C20;
+  --color-sobre-primario: #FFFFFF;
+  --color-rio: #2F6F73;
+
+  /* Estados */
+  --color-ok-fondo: #DCEFE2;
+  --color-ok-texto: #1E5C34;
+  --color-error-fondo: #F8DCDC;
+  --color-error-texto: #8F2323;
+  --color-aviso-fondo: #FBE8BE;
+  --color-aviso-texto: #6E4300;
+  --color-info-fondo: #D9ECEC;
+  --color-info-texto: #1F5457;
+
+  /* Tipografía (una sola familia, distintos pesos) */
+  --fuente: 'Bricolage Grotesque', system-ui, sans-serif;
+  --texto-sm: 0.875rem;
+  --texto-base: 1.125rem;
+  --texto-lg: 1.4rem;
+  --texto-xl: 1.75rem;
+  --texto-2xl: 2.25rem;
+
+  /* Forma: cada nivel tiene su propio radio */
+  --radio-sm: 8px;
+  --radio-md: 14px;
+  --radio-lg: 22px;
+
+  /* Espacios */
+  --espacio-1: 0.25rem;
+  --espacio-2: 0.5rem;
+  --espacio-3: 0.75rem;
+  --espacio-4: 1rem;
+  --espacio-6: 1.5rem;
+  --espacio-8: 2rem;
+
+  /* Alto mínimo de todo lo que se toca (pantalla táctil) */
+  --toque-min: 56px;
+}

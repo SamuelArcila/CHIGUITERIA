@@ -1,0 +1,12 @@
+.badge {
+  display: inline-block;
+  padding: var(--espacio-1) var(--espacio-3);
+  border-radius: 999px;
+  font-size: var(--texto-sm);
+  font-weight: 600;
+}
+.badge--ok { background: var(--color-ok-fondo); color: var(--color-ok-texto); }
+.badge--error { background: var(--color-error-fondo); color: var(--color-error-texto); }
+.badge--aviso { background: var(--color-aviso-fondo); color: var(--color-aviso-texto); }
+.badge--info { background: var(--color-info-fondo); color: var(--color-info-texto); }
+.badge--neutro { background: transparent; color: var(--color-tinta); border: 1.5px solid var(--color-borde); }

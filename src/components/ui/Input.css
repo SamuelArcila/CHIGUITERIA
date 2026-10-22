@@ -1,0 +1,11 @@
+.campo label { display: block; margin-bottom: var(--espacio-2); font-weight: 600; }
+.campo input {
+  width: 100%;
+  min-height: var(--toque-min);
+  padding: 0 var(--espacio-4);
+  background: var(--color-superficie);
+  color: inherit;
+  border: 1.5px solid var(--color-tinta-suave);
+  border-radius: var(--radio-sm);
+  font: inherit;
+}

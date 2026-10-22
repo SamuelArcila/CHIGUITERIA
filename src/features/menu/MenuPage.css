@@ -1,0 +1,25 @@
+.menu {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 260px 1fr 340px;
+  gap: var(--espacio-8);
+  padding: var(--espacio-8);
+}
+.menu__lateral { display: flex; flex-direction: column; gap: var(--espacio-8); }
+.menu__lateral h1 { font-size: var(--texto-2xl); }
+.menu__grilla {
+  margin-top: var(--espacio-6);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--espacio-4);
+}
+.menu__aviso { margin-top: var(--espacio-6); color: var(--color-tinta-suave); }
+
+@media (max-width: 1100px) {
+  .menu { grid-template-columns: 220px 1fr; }
+  .carrito { grid-column: 1 / -1; position: static; }
+}
+
+@media (max-width: 700px) {
+  .menu { grid-template-columns: 1fr; padding: var(--espacio-4); gap: var(--espacio-6); }
+}
