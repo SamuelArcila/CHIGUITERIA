@@ -18,6 +18,7 @@ language sql stable security definer set search_path = public as $$ select coale
 -- 2. Permisos de partida: nada para nadie, y luego solo lo necesario
 revoke all on all tables in schema public from anon, authenticated;
 revoke all on all functions in schema public from public, anon, authenticated;
+grant usage on schema public to anon, authenticated;
 
 grant select on categoria, producto, adicion, producto_adicion, producto_disponible to anon, authenticated;
 grant select on pedido, detalle_pedido, detalle_adicion, usuario, insumo, receta, movimiento_inventario to authenticated;

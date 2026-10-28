@@ -8,7 +8,7 @@ export async function obtenerCategorias() {
 
 export async function obtenerProductos() {
   const [productos, disponibles] = await Promise.all([
-    supabase.from('producto').select('id, categoria_id, nombre, precio').eq('activo', true).order('nombre'),
+    supabase.from('producto').select('id, categoria_id, nombre, precio, imagen').eq('activo', true).order('nombre'),
     supabase.from('producto_disponible').select('producto_id, disponible, tamanos'),
   ])
   if (productos.error) throw productos.error
@@ -19,6 +19,7 @@ export async function obtenerProductos() {
     categoriaId: p.categoria_id,
     nombre: p.nombre,
     precio: Number(p.precio),
+    imagenUrl: p.imagen ? supabase.storage.from('productos').getPublicUrl(p.imagen).data.publicUrl : null,
     disponible: porId.get(p.id)?.disponible ?? false,
     tamanos: porId.get(p.id)?.tamanos ?? [],
   }))
